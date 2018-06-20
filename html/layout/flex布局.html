@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     	div,body,header,footer,h1,h2,h3,h4,h5,h6,p{margin: 0; padding: 0;}
+    	header{width: 100%; padding: 20px 0; background-color: #ddd; text-align: center;}
+	    footer{width: 100%; padding: 15px 0; background-color: #ccc; text-align: center;}
+	
+	    /*flex布局*/
+	    .container,.main,.left,.right{height: 500px;}
+	    .container{display: flex;}
+		.left{order: -1; width: 200px; background-color: red;}
+		.main{flex-grow: 1; background-color: yellow;}
+		.right{flex-basis: 150px; background-color: blue;}
+
+    </style>
+</head>
+
+<body>
+
+	<header><h1>Header内容</h1></header>
+
+	<div class="container">
+		<div class="main"></div>
+      	<div class="left"></div>
+		<div class="right"></div>
+   	</div>
+
+   	<footer><p>Footer内容</p></footer>
+
+</body>
+
+</html>

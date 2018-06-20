@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    	div,body,header,footer,h1,p{margin: 0; padding: 0;}
+    	header{width: 100%; padding: 20px 0; background-color: #ddd; text-align: center;}
+	    footer{width: 100%; padding: 15px 0; background-color: #ccc; text-align: center;}
+	
+	    /*双飞翼布局*/
+	    
+	    .content{margin: 0 150px 0 200px;}
+	    .left,.main,.right{float: left; height: 500px;}
+		.left{margin-left: -100%; width: 200px; background-color: red;}
+		.main{width: 100%; background-color: yellow;}
+		.right{margin-left: -150px; width: 150px; background-color: blue;}
+		footer{clear: both;}
+
+
+    </style>
+</head>
+
+<body>
+
+	<header><h1>Header内容</h1></header>
+
+	<div class="container">
+		<div class="main">
+			<div class="content"></div>
+		</div>
+      	<div class="left"></div>
+		<div class="right"></div>
+   	</div>
+
+   	<footer><p>Footer内容</p></footer>
+
+</body>
+
+</html>
